@@ -22,7 +22,7 @@ export default {
 
       const daysToPride = moment([nextYear, 5, 1]).toNow(true);
 
-      if(currentMonth === 3)
+      if(currentMonth === 5)
       {
         return {text: "YAAAS", description: 'Happy <span class="p">p</span><span class="r">r</span><span class="i">i</span><span class="d">d</span><span class="e">e</span>', giphy: "https://media.giphy.com/media/3o7TKKFRj4mQDFZYhG/giphy.gif", class: "isPride", countdown: false}
       }
@@ -51,14 +51,22 @@ export default {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 50px;
   color: maroon;
+  @media (min-width: 640px)
+  {
+    font-size: 100px;
+  }
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 25px;
   max-width: 420px;
   text-align: center;
+  @media (min-width: 640px)
+  {
+    font-size: 50px;
+  }
 }
 
 .isPride {
@@ -67,9 +75,13 @@ h2 {
   h1,
   h2 {
     color: black;
-    font-size: 100px;
+    font-size: 50px;
     max-width: none;
     text-transform: uppercase;
+    @media (min-width: 640px)
+  {
+    font-size: 100px;
+  }
 
   }
   h2 {
