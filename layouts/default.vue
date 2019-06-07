@@ -15,7 +15,15 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
+body, html {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
 
+body {
+  position: relative;
+}
 img {
   max-width: 100%;
 }
