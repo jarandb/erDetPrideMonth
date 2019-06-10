@@ -12,7 +12,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "Er du usikker om det er pride? Sjekk her"
       }
     ],
     link: [

@@ -31,8 +31,12 @@ export default {
       const currentMonth = currentDate.month();
       const currentYear = currentDate.year();
       const nextYear = currentDate.year(currentYear + 1).year();
-
-      const daysToPride = moment([nextYear, 5, 1]).toNow(true);
+      let daysToPride;
+      if( currentMonth > 5) {
+      daysToPride = moment([nextYear, 5, 1]).toNow(true);
+      } else {
+        daysToPride = moment([currentYear, 5, 1]).toNow(true);
+      }
 
       if (currentMonth === 5) {
         return {
